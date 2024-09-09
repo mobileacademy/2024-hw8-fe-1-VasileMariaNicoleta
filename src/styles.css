@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#gameBoard {
+    display: inline-grid;
+    margin-top: 20px;
+}
+
+.board-square {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.board-square.bomb {
+    background-color: red;
+}
+
+.board-square.open {
+    background-color: #fff;
+}
+
+.board-square.flagged {
+    background-color: yellow;
+}
+
+#winMessage {
+    font-size: 24px;
+    color: green;
+    margin-top: 20px;
+}
